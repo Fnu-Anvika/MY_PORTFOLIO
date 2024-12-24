@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FNU Anvika - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Times New Roman', serif;
+      }
+
+      .details-container {
+        background: linear-gradient(135deg, #ffffff, #f8f8f8);
+        color: #000;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .details-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .experience-details-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .color-container {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">FNU Anvika</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="FNU Anvika profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">FNU ANVIKA</h1>
+        <p class="section__text__p2">Graduate Student | Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/fnu-anvika/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="location.href='https://github.com/fnu-anvika'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>
+                <strong>Graduate Teaching Assistant</strong> - Illinois Institute of Technology (Aug 2024 - Present): Assisted students in understanding machine learning concepts and prepared instructional materials.
+              </p>
+              <br />
+              <p>
+                <strong>Software Engineer Intern</strong> - Zakthi Innovation Labs (Jan 2023 - Dec 2023): Developed tools for data preprocessing and AI model development.
+              </p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>
+                <strong>Master of Science, Computer Science</strong> - Illinois Institute of Technology, Chicago, IL (May 2025), GPA: 4.0/4.0.
+              </p>
+              <br />
+              <p>
+                <strong>Bachelor of Engineering in Computer Science</strong> - P.E.S. College of Engineering, Mandya, India (Aug 2023), GPA: 3.913/4.0.
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              <strong>
+              Hello! I'm Fnu Anvika, a dedicated computer scientist and data analytics enthusiast pursuing a Master of Science in Computer Science at the Illinois Institute of Technology, where I maintain a perfect 4.0 GPA. With a strong foundation in programming and data-driven problem-solving, I specialize in leveraging tools like Python, Pandas, NumPy, Seaborn, and Matplotlib to analyze complex datasets and uncover actionable insights.
+
+              My academic and professional journey has been enriched by diverse projects that merge machine learning and data analytics, from building search engines and image classification models to designing IoT systems and robotics solutions. I’m proficient in developing data visualizations that tell compelling stories, enabling stakeholders to make informed decisions.
+              
+              In addition to my technical expertise, I bring hands-on experience from my role as a Graduate Teaching Assistant in Machine Learning, where I supported students in mastering concepts like supervised learning, neural networks, and data preprocessing. I also thrive in collaborative environments, having worked on innovative AI tools and frameworks during my internship at Zakthi Innovation Labs.
+              
+              A lifelong learner, I’ve expanded my skills to include advanced data analytics techniques, exploratory data analysis, and visualization tools like Tableau and Power BI. My work is guided by a passion for making sense of data and a drive to turn insights into impactful actions.
+              
+              Explore my portfolio to see how I combine creativity and technical expertise to solve real-world problems. Let’s connect and turn data into opportunities!
+            </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Graduate Teaching Assistant</h2>
+          <p>
+            <strong>Illinois Institute of Technology</strong> - August 2024 to
+            Present
+          </p>
+          <ul>
+            <li>
+              Assisted students in understanding machine learning concepts and
+              techniques.
+            </li>
+            <li>
+              Prepared instructional materials and conducted one-on-one student
+              sessions.
+            </li>
+          </ul>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Software Engineer Intern</h2>
+          <p>
+            <strong>Zakthi Innovation Labs</strong> - January 2023 to December
+            2023
+          </p>
+          <ul>
+            <li>
+              Developed tools for efficient preprocessing, training, and
+              deploying machine learning models.
+            </li>
+            <li>
+              Collaborated with cross-functional teams to innovate in AI model
+              development.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Programming Languages Section -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>R</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+    
+          <!-- Engineering Tools Section -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Engineering Tools & Software</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>TensorFlow</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>PyTorch</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Scikit-learn</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Scrapy</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Hadoop</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Spark</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+    
+          <!-- Data Analysis Section -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analysis & Visualization</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Power BI</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Tableau</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Excel</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+    
+          <!-- Other Skills Section -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Agile</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Scrum</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Flask</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>AWS</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>GCP</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+    
+    <section id="papers-patents">
+      <p class="section__text__p1">Discover My</p>
+      <h1 class="title">Papers and Patents</h1>
+      <div class="experience-details-container">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Patent: A Novel Design for Touch Kiosk</h2>
+          <p>
+            Developed and patented a touch kiosk for academic use, enabling information gathering and service delivery via a digital screen without human interaction, designed using OnShape software.
+          </p>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Applications of Robots in Industry</h2>
+          <p>
+            Published a conference paper reviewing the role of robotics in fields such as healthcare, military, space, and agriculture.
+          </p>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Language Identification from Trilingual Handwritten Documents</h2>
+          <p>
+            Presented a paper on an efficient language identification technique for Kannada, Hindi, and English documents, achieving 95.83% classification accuracy using discriminating features.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Search Engine Development</h2>
+          <p>
+            Built a content retrieval system using Scrapy and Flask, employing
+            TF-IDF for ranking results efficiently.
+          </p>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Deep Neural Networks</h2>
+          <p>
+            Designed CNNs for CIFAR-10 image classification with TensorFlow,
+            exploring advanced architectures.
+          </p>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">UV Disinfection Robot</h2>
+          <p>
+            Developed a mobile-controlled robot leveraging UVC light for safe
+            and efficient disinfection.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:anvika0806@gmail.com">anvika0806@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/fnu-anvika/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 FNU ANVIKA. All Rights Reserved.</p>
+    </footer>
